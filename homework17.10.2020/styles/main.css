@@ -6,11 +6,12 @@
 font-family: HouschkaPro-Medium;
 src: url(../fonts/HouschkaPro/HouschkaPro-Medium.woff);
 }
-body{
+html{
+  min-height: 100%;
   background: linear-gradient(#b9d6ef 0px 464px,
    #ddecfa 464px 468px,
     #327dad 468px 476px,
-     #266b97 476px 1000px)
+     #266b97 476px 1000vh)
 }
 .main-block{
   margin: 0 auto;
