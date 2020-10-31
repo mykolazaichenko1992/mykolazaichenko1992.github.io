@@ -1,0 +1,19 @@
+.main-form {
+  display: flex;
+  flex-wrap: wrap;
+  width: 150px;
+  height: 70px;
+  margin: 0 auto;
+  align-items: center;
+}
+.top-block{
+  display: flex;
+  font-size: 32px;
+  justify-content: space-around;
+  border: 0.2px solid black;
+  padding-left: 3px;
+}
+.down-block button{
+  width: 59.8px;
+  height: 27px;
+}
