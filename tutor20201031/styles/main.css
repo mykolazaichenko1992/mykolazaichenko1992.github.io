@@ -1,0 +1,178 @@
+@font-face {
+  font-family: "Houschka Pro Bold";
+  src: url("../fonts/HouschkaPro-Bold.otf");
+}
+@font-face {
+  font-family: "Houschka Pro Medium";
+  src: url("../fonts/HouschkaPro-Medium.otf");
+}
+@keyframes swing {
+    0%   { margin-top: -25px; }
+    5%   { margin-top: -26px; }
+    8%   { margin-top: -27px; }
+    13%   { margin-top: -26px; }
+    16%   { margin-top: -25px; }
+    18%   { margin-top: -24px; }
+    21%   { margin-top: -23px; }
+    26%   { margin-top: -24px; }
+    29%   { margin-top: -25px; }
+    32%   { margin-top: -26px; }
+    34%   { margin-top: -25px; }
+    37%   { margin-top: -24px; }
+    39%   { margin-top: -25px; }
+    47%   { margin-top: -24px; }
+    50%   { margin-top: -25px; }
+    55%   { margin-top: -26px; }
+    58%   { margin-top: -27px; }
+    63%   { margin-top: -26px; }
+    66%   { margin-top: -25px; }
+    68%   { margin-top: -24px; }
+    71%   { margin-top: -23px; }
+    76%   { margin-top: -24px; }
+    79%   { margin-top: -25px; }
+    82%   { margin-top: -26px; }
+    84%   { margin-top: -25px; }
+    87%   { margin-top: -24px; }
+    89%   { margin-top: -25px; }
+    92%   { margin-top: -26px; }
+    95%   { margin-top: -25px; }
+    100%   { margin-top: -25px; }
+}
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.sky {
+  background-color: rgb(185,214,239);
+  height: 24.2vw;
+  border-style: solid;
+  border-width:0 0 4px 0;
+  border-color: rgb(221,236,250);
+  margin: 0;
+}
+.cloud_left {
+  position: absolute;  
+  left: calc(50% - 18.6vw);
+}
+.cloud_right {
+  position: absolute;
+  left: calc(50% + 2.1vw);
+}
+.coming_soon {
+  position: absolute;
+  font-family: "Houschka Pro Bold";
+  font-size: 3.75vw;
+  margin: 5vw 0 0 0;
+  left: calc(50% - 13vw);
+  color: rgb(254,254,254);
+  text-shadow: 2px 3px 1px rgba(0,0,0,0.17);
+}
+.subscribe_notify {
+  position: absolute;
+  font-family: "Houschka Pro Medium";
+  font-size: 0.73vw;
+  margin: 9.6vw 0 0 0;
+  left: calc(50% - 7.5vw);
+  color: rgb(38,107,151);
+}
+.subscribe_form {
+  position: absolute;
+  margin: 11.2vw 0 0 0;
+  left: calc(50% - 9vw);
+}
+.email {
+  width: 11.9vw;
+  height: 1.9vw;
+  border: 0.04vw solid rgb(209,209,208);
+  border-radius: 0.05vw;
+  box-shadow: 
+    0 2px 5px 0 rgba(29,26,22,0.2) inset,
+    0 1px 0 0 rgb(255,255,255);
+  padding: 2px 0 0 13px;
+}
+.email::placeholder {
+  font-family: Arial;
+  font-size: 0.635vw;
+  color: rgb(128,128,128);
+}
+.sent_button {
+  font-family: "Houschka Pro Bold";
+  font-size: 0.749vw;
+  text-shadow: 0 1px 1px rgba(29,26,22,0.2);
+  color: rgb(255,255,255);
+  width: 4.78vw; 
+  height: 2.1vw;
+  border-radius: 3px;
+  border: 1px solid rgb(250,170,34);
+  background: rgb(248,164,38) linear-gradient(to bottom, rgb(251,201,67), rgb(248,164,38));
+  margin: 0 0 0 5px;
+  box-shadow: 0 1px 1px 0 rgb(253,223,95) inset;
+}
+.water {
+  position: relative;
+  background-color: rgb(38,107,151);
+  height: calc(100% - 4vw - 9px - 4px);  
+  border-style: solid;
+  border-width: 9px 0 0 0;
+  border-color: rgb(50,125,173);
+  margin: 0;
+}
+.iceberg {
+  position: absolute;   
+  margin: -10.1vw;
+  left: calc(50% + 2vw);
+  z-index: 2;
+}
+.boat {
+  animation-name: swing;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate; 
+  position: absolute;
+  left: calc(50% - 9.5vw);
+  z-index: 3;
+}
+.timer {
+  display: inline;
+  width: 18vw;
+  position: absolute;
+
+  margin-top: 2.8vw;
+  left: calc(50% - 8.15vw);
+  z-index: 4;
+}
+.days, 
+.hours,
+.mins {
+  width: 5.7vw;
+  display: inline-block;
+  position: relative;
+}
+.mins {
+  margin-left: -4px;
+}
+.count {
+  width: 3.6vw;
+  height: 3.6vw;
+  background: rgb(185,214,239);
+  color: rgb(38,107,151);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-family: "Houschka Pro Medium";
+  font-size: 1.27vw;
+  margin: 0px auto;
+}
+.count_text {
+  font-family: "Houschka Pro Bold";
+  font-size: 1.27vw;
+  color: rgb(243,243,243);
+  text-align: center;
+  margin: 0.238vw;
+}
