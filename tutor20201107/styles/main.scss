@@ -5,7 +5,7 @@
   border-radius: 0 50% 50% 50%;
   border: 1px solid black;
   transform: rotate(45deg);
-  animation: kapla_drop 3s 1 0s;
+  animation: kapla_drop 3s infinite 0s;
 }
 
 @keyframes kapla_drop {
@@ -13,11 +13,11 @@
     margin-top: -20px;
   }
   99%{
-    margin-top: 200px;
+    margin-top: 215px;
     opacity: 0.5;
   }
   100%{
-    margin-top: 220px;
+    margin-top: 235px;
     opacity: 0;
   }
 }
@@ -67,7 +67,7 @@ main {
   border-radius: 50%;
   border: 1px solid aqua;
   opacity: 0;
-  animation: sled1_rise 2s 1 2.75s;
+  animation: sled1_rise 2s infinite 2.75s;
 }
 
 .sled2 {
@@ -78,6 +78,6 @@ main {
   border-radius: 50%;
   border: 1px solid aqua;
   opacity: 0;
-  animation: sled2_rise 2s 1 2.75s;
+  animation: sled2_rise 2s infinite 2.75s;
 }
 
