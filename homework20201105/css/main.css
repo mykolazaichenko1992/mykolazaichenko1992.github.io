@@ -1,0 +1,248 @@
+@keyframes ball_down{
+  from{
+    top:25px;
+  }
+  to{
+    top:125px;
+  }
+}
+@keyframes to_platform2{
+  0%{
+    top:125px;
+    left:65px
+  }
+  50%{
+    top:70px;
+    left: 100px;
+  }
+  100%{
+    top:100px;
+    left: 140px;
+  }
+}
+@keyframes to_platform3{
+  0%{
+    top:100px;
+    left: 140px;
+  }
+  50%{
+    top:40px;
+    left: 180px;
+  }
+  100%{
+    top:70px;
+    left: 220px;
+  }
+}
+@keyframes to_platform4{
+  0%{
+    top:70px;
+    left: 220px;
+  }
+  50%{
+    top:40px;
+    left: 280px;
+  }
+  100%{
+    top:50px;
+    left: 320px;
+  }
+}
+@keyframes to_platform5{
+  0%{
+    top:50px;
+    left: 320px;
+  }
+  50%{
+    top:10px;
+    left: 380px;
+  }
+  100%{
+    top:25px;
+    left: 420px;
+  }
+}
+@keyframes to_platform6{
+  0%{
+    top:25px;
+    left: 420px;
+  }
+  100%{
+    top:325px;
+    left: 430px;
+  }
+}
+@keyframes to_platform7{
+  0%{
+    top:325px;
+    left: 430px;
+  }
+  50%{
+    top:255px;
+    left: 390px;
+  }
+  100%{
+    top:300px;
+    left: 360px;
+  }
+}
+@keyframes to_platform8{
+  0%{
+    top:300px;
+    left: 360px;
+  }
+  50%{
+    top:255px;
+    left: 300px;
+  }
+  100%{
+    top:275px;
+    left: 260px;
+  }
+}
+@keyframes to_platform9{
+  0%{
+    top:275px;
+    left: 260px;
+  }
+  50%{
+    top:200px;
+    left: 210px;
+  }
+  100%{
+    top:250px;
+    left: 160px;
+  }
+}
+@keyframes to_platform10{
+  0%{
+    top:250px;
+    left: 160px;
+  }
+  50%{
+    top:200px;
+    left: 110px;
+  }
+  100%{
+    top:225px;
+    left: 50px;
+  }
+}
+@keyframes to_platform1{
+  0%{
+    top:225px;
+    left: 50px;
+  }
+  100%{
+    top:125px;
+    left:65px
+  }
+}
+main{
+  width: 500px;
+  height: 400px;
+  background-color: burlywood;
+  margin: 0px auto;
+  position: relative;
+}
+.ball{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  position: absolute;
+  top:25px;
+  left:65px;
+  animation: 
+  ball_down 2s 1 0s,
+  to_platform2 2s 1 2s,
+  to_platform3 2s 1 4s,
+  to_platform4 2s 1 6s,
+  to_platform5 2s 1 8s,
+  to_platform6 3s 1 10s,
+  to_platform7 2s 1 13s,
+  to_platform8 2s 1 15s,
+  to_platform9 2s 1 17s,
+  to_platform10 2s 1 19s,
+  to_platform1 1s 1 21s;
+}
+.platform1{
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  border: 2px solid black;
+  top: 150px;
+  left: 50px;
+}
+.platform2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  top: 125px;
+  left: 125px;
+}
+.platform3{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  top: 95px;
+  left: 200px;
+}
+.platform4{
+  position: absolute;
+  width: 75px;
+  height: 100px;
+  border: 2px solid black;
+  top: 75px;
+  left: 300px;
+}
+.platform5{
+  position: absolute;
+  width: 75px;
+  height: 125px;
+  border: 2px solid black;
+  top: 50px;
+  left: 400px;
+}
+.platform6{
+  position: absolute;
+  width: 50px;
+  height: 25px;
+  border: 2px solid black;
+  top: 350px;
+  left: 425px;
+}
+.platform7{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 2px solid black;
+  top: 325px;
+  left: 350px;
+}
+.platform8{
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  border: 2px solid black;
+  top: 300px;
+  left: 240px;
+}
+.platform9{
+  position: absolute;
+  width: 75px;
+  height: 100px;
+  border: 2px solid black;
+  top: 275px;
+  left: 125px;
+}
+.platform10{
+  position: absolute;
+  width: 75px;
+  height: 125px;
+  border: 2px solid black;
+  top: 250px;
+  left: 25px;
+}

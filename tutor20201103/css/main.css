@@ -1,0 +1,19 @@
+body{
+  background-color: yellowgreen;
+  display: flex;
+  justify-content: center;
+
+}
+img{
+  border: 0;
+  border-radius: 0;
+  transform: none;
+  transition: border 2s linear 0s,
+              border-radius 2s linear 2s,
+              transform 2s linear 4s;
+}
+.imgt{
+  border: 10px solid black;
+  border-radius: 20px;
+  transform: rotate(180deg);
+}
