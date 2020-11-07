@@ -155,16 +155,16 @@ main{
   left:65px;
   animation: 
   ball_down 2s 1 0s,
-  to_platform2 2s 1 2s,
-  to_platform3 2s 1 4s,
-  to_platform4 2s 1 6s,
-  to_platform5 2s 1 8s,
-  to_platform6 3s 1 10s,
-  to_platform7 2s 1 13s,
-  to_platform8 2s 1 15s,
-  to_platform9 2s 1 17s,
-  to_platform10 2s 1 19s,
-  to_platform1 1s 1 21s;
+  to_platform2 2s normal  2s,
+  to_platform3 2s normal  4s,
+  to_platform4 2s normal  6s,
+  to_platform5 2s normal  8s,
+  to_platform6 3s normal  10s,
+  to_platform7 2s normal  13s,
+  to_platform8 2s normal  15s,
+  to_platform9 2s normal  17s,
+  to_platform10 2s normal  19s,
+  to_platform1 1s normal  21s;
 }
 .platform1{
   position: absolute;
