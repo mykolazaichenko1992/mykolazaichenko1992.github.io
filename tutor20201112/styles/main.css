@@ -1,0 +1,24 @@
+main {
+  height: 400px;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.div-top {
+  min-width: 400px;
+  height: 200px;
+  background-color: red;
+  border: 1px solid black;
+}
+
+.div-down {
+  min-width: 400px;
+  height: 200px;
+  background-color: green;
+  border: 1px solid black;
+}
+/*# sourceMappingURL=main.css.map */
