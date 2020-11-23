@@ -5,8 +5,8 @@
   border: 1px solid black;
   border-radius: 50%;
   left: 38px;
-  -webkit-animation: ball_from1_to_item1 1s 1 0s, balljumping 10s 1 1s;
-          animation: ball_from1_to_item1 1s 1 0s, balljumping 10s 1 1s;
+  -webkit-animation: ball_from1_to_item1 1s 1 0s, balljumping 10s infinite ease-in 1s;
+          animation: ball_from1_to_item1 1s 1 0s, balljumping 10s infinite ease-in 1s;
 }
 
 @-webkit-keyframes ball_from1_to_item1 {
