@@ -1,6 +1,7 @@
-.input {
-  width: 500px;
-  height: 300px;
+.main {
+  width: 600px;
+  height: auto;
+  margin: 0 auto;
   font-size: 24px;
 }
 /*# sourceMappingURL=main.css.map */
