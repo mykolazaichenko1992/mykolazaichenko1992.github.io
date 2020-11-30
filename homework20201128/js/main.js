@@ -1,14 +1,14 @@
 //Задание 1
 console.log(`Начало 1 задания`);
-const funcZ1 = (arr) => {
+const funcZ1 = (arr, id1, id2, id3) => {
   //Задание 1
-  if (arr[2] != arr[1] + arr[3]) arr[2] = arr[1] + arr[3];
-  if (arr[5] != arr[4] + arr[6]) arr[5] = arr[4] + arr[6];
-  if (arr[7] != arr[6] + arr[8]) arr[7] = arr[6] + arr[8];
+  if (arr[id1] != arr[id1-1] + arr[id1+1]) arr[id1] = arr[id1-1] + arr[id1+1];
+  if (arr[id2] != arr[id2-1] + arr[id2+1]) arr[id2] = arr[id2-1] + arr[id2+1];
+  if (arr[id3] != arr[id3-1] + arr[id3+1]) arr[id3] = arr[id3-1] + arr[id3+1];
 }
 const arr1 = [5, 6, 3, 2, 6, 74, 21, 412, 53];
 console.log(arr1, `Перед запуском функции 1 задания`);
-funcZ1(arr1);
+funcZ1(arr1, 2, 5, 7);
 console.log(arr1, `После запуска  функции 1 задания`);
 console.log(`Конец 1 задания, Начало 2`);
 //Задание 2
@@ -43,18 +43,4 @@ const funcZ3 = (arr) => {
   console.log(arr2, `Второй массив это запись первого в пустой`);
 }
 funcZ3(arr1);
-console.log(`Конец 3 задания, начало 4`);
-//Задание 4
-let number = 9991999;
-const fiboArray = [];
-fiboArray.push(0);
-fiboArray.push(1);
-let counter = 0;
-let length = fiboArray.length; //Для сокращения не более
-while (fiboArray[length - 1] < number) {
-  if ((fiboArray[length - 1] + fiboArray[length - 2]) > number) break;
-  fiboArray.push(fiboArray[length - 1] + fiboArray[length - 2]);
-  ++length;
-  counter++;
-}
-console.log(fiboArray, counter, 'Итераций');
+console.log(`Конец 3 задания`);
