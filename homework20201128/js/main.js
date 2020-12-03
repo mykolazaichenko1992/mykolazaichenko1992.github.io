@@ -2,14 +2,15 @@
 console.log(`Начало 1 задания`);
 const funcZ1 = (arr, index) => {
   //Задание 1
-  if (arr[index] != arr[index-1] + arr[index+1]) arr[index] = arr[index-1] + arr[index+1];
+  if (arr[index] != arr[index-1] + arr[index+1])
+    arr[index] = arr[index-1] + arr[index+1];
 }
-const arr1 = [5, 6, 3, 2, 6, 74, 21, 412, 53];
-console.log(arr1, `Перед запуском функции 1 задания`);
-funcZ1(arr1, 2);
-funcZ1(arr1, 5);
-funcZ1(arr1, 7);
-console.log(arr1, `После запуска  функции 1 задания`);
+const arr = [5, 6, 3, 2, 6, 74, 21, 412, 53];
+console.log(arr, `Перед запуском функции 1 задания`);
+funcZ1(arr, 2);
+funcZ1(arr, 5);
+funcZ1(arr, 7);
+console.log(arr, `После запуска  функции 1 задания`);
 console.log(`Конец 1 задания, Начало 2`);
 //Задание 2
 const randomArray = (arr) => {
@@ -26,6 +27,7 @@ const funcZ2 = (arr) => {
   arr[arr.length - 1] -= min;
   console.log(min, `Минимальное число`);
 }
+const arr1 = [5, 6, 3, 2, 6, 74, 21, 412, 53];
 randomArray(arr1);
 console.log(arr1, `Перед запуском основной 2 функции 2 задания`);
 funcZ2(arr1);
