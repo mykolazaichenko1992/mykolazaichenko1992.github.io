@@ -20,11 +20,23 @@ let game = (arr1, arr2) => {
     }
   }
 }
+let proverka = (arr1, arr2) => {
+  if(arr1[arr1.length -1] > arr2[arr2.length -1]){
+    findFirstDiv.innerHTML = player1;
+    findFirstDiv.innerHTML += ` Победил первый игрок`;
+    findSecondDiv.innerHTML = player2;
+  }
+  else{
+    findSecondDiv.innerHTML = player2;
+    findSecondDiv.innerHTML += ` Победил второй игрок`;
+    findFirstDiv.innerHTML = player1;
+  }
+}
 let player1 = [];
 player1[0] = 100;
 let player2 = [];
 player2[0] = 100;
 game(player1, player2);
-findFirstDiv.innerHTML = player1;
-findSecondDiv.innerHTML = player2;
+proverka(player1, player2);
+
 
