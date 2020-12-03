@@ -1,20 +1,20 @@
 //Задание 1
 console.log(`Начало 1 задания`);
-const funcZ1 = (arr, id1, id2, id3) => {
+const funcZ1 = (arr, index) => {
   //Задание 1
-  if (arr[id1] != arr[id1-1] + arr[id1+1]) arr[id1] = arr[id1-1] + arr[id1+1];
-  if (arr[id2] != arr[id2-1] + arr[id2+1]) arr[id2] = arr[id2-1] + arr[id2+1];
-  if (arr[id3] != arr[id3-1] + arr[id3+1]) arr[id3] = arr[id3-1] + arr[id3+1];
+  if (arr[index] != arr[index-1] + arr[index+1]) arr[index] = arr[index-1] + arr[index+1];
 }
 const arr1 = [5, 6, 3, 2, 6, 74, 21, 412, 53];
 console.log(arr1, `Перед запуском функции 1 задания`);
-funcZ1(arr1, 2, 5, 7);
+funcZ1(arr1, 2);
+funcZ1(arr1, 5);
+funcZ1(arr1, 7);
 console.log(arr1, `После запуска  функции 1 задания`);
 console.log(`Конец 1 задания, Начало 2`);
 //Задание 2
 const randomArray = (arr) => {
   for (let i = 0; i < arr.length; i++) {
-    arr[i] = Math.random() * (10000 - 0) + 0; // 10000 - max 0 - min
+    arr[i] = Math.random() * (100 - 0) + 0; // 10000 - max 0 - min
   }
 }
 const funcZ2 = (arr) => {
