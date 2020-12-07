@@ -1,15 +1,10 @@
 let str1 = "Первое задание ";
 
-for(let i = 2; i <= 45.2; i += 2)
-{
-  if((i % 2 == 0) && (i <= 14)){
-     str1 += i + " ";
-     continue;
-  }
-  else if((i >= 33) && (i % 2 == 1)){
-    str1 += i + " ";
-  }
-  console.log(i);
+for(let i = 2; i <= 14; i += 2){
+  str1 += i + " ";
+}
+for(let i = 33; i <= 45.2; i += 2){
+  str1 += i + " ";
 }
 
 let zadanie1 = document.querySelector(".main");
