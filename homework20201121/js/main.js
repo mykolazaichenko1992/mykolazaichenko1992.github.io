@@ -18,7 +18,7 @@ if(varD > 0){
 }
 else if(varD == 0){
   varX1 = (-varB) / 2 * varA;
-  str = `X1 = ${varX1}`
+  str = `X1 = ${varX1}`;
   tempEL.innerHTML = str;
 }
 else{
