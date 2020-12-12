@@ -3,69 +3,49 @@ const randomInt = (min, max) => {
   let rand = min + Math.random() * (max + 1 - min);
   return Math.round(rand);
 }
-const arr = [
-  [, , , , ,],
-  [, , , , ,],
-  [, , , , ,],
-  [, , , , ,],
-  [, , , , ,],
-];
-/*ЗАДАНИЕ 1
- Сгенерировать двумерный массив 5х5 случайных чисел (0..12)*/ 
-for(let i = 0; i < arr.length; i++){
-  for(let j = 0; j < arr[0].length; j++){
-    arr[i][j] = randomInt(0, 12);
+const createRandom2dArray = (rows, columns, min, max) => {
+  const arr = [];
+  for (let r = 0; r < rows; r++) {
+    arr[r] = [];
+    for (let c = 0; c < columns; c++) {
+      arr[r][c] = randomInt(min, max);
+    }
   }
+  return arr;
 }
-console.table(arr); //`Сгенерировать двумерный массив 5х5 случайных чисел (0..12)`
-// /*ЗАДАНИЕ 2
-// посчитать сумму чисел основной диагонали*/
-let total = null;
-for(let i = 0; i < arr.length; i++){
-  total += arr[i][i];
-}
-console.log(total, `Сумма по основной диагонали, 2 ЗАДАНИЕ`); //Вывод 2 задания
-/*Задание 3
-посчитать сумму чисел побочной диагонали*/
-total = null;//Сброс переменной
-for(let i = 0; i < arr.length; i++){
-  total += arr[i][arr.length - 1 - i];
-}
-console.log(total, `Сумма по обратной диагонали, 3 ЗАДАНИЕ`); //Вывод 3 задания
-/*Задание 4
- переставить местами столбцы 1 и 2*/
- let temp = null;
- for(let i = 0; i < arr.length; ++i){
-    temp = arr[i][1];
-    arr[i][1] = arr[i][2];
-    arr[i][2] = temp;
-    temp = null;
+let arr = [];
+arr = createRandom2dArray(5, 5, 0, 12);
+console.table(arr);  /*ЗАДАНИЕ 1
+Сгенерировать двумерный массив 5х5 случайных чисел (0..12)*/
+const summInArrayMainDiagonal = (arr) => {
+  let total = null;
+  for (let r = 0; r < arr.length; r++) {
+    total += arr[r][r];
   }
-  console.table(arr); //Вывод 4 задания
-// let rows = 0;
-// let max = 0;
-// let arrMax = [];
-// while(rows < 5){
-//   max = 0;
-//   for(let i = 0; i < arr.length; i++){
-//     max += arr[i][rows];
-//   }
-//   rows++;
-//   arrMax.push(max);
-//   console.log(arrMax, `${rows}`);
-// }
-// max = 0;
-// //Найти индекс максимального значения
-// for(let i = 0; i < arrMax.length; i++){
-//   if(max < arrMax[i]) max = arrMax[i];
-// }
-// let index = arrMax.indexOf(max, 0);
-// console.log(index);
-// while(rows < 5){
-//   max = 0;
-//   for(let i = 0; i < arr.length; i++){
-//       arr[i][rows] = null;
-//   }
-//   rows++;
-// }
-// console.log(arr);
+  console.log(total, `Сумма по основной диагонали, 2 ЗАДАНИЕ`);
+}
+summInArrayMainDiagonal(arr); //2 Задание
+const summInArraySecondDiagonal = (arr) => {
+  let total = null;
+  for (let r = 0; r < arr.length; r++) {
+    total += arr[r][arr.length - 1 - r];
+  }
+  console.log(total, `Сумма по второстипенной диагонали, 3 ЗАДАНИЕ`);
+}
+summInArraySecondDiagonal(arr); //3 Задание
+const swap2columns = (arr, col1, col2) => {
+  let temp = null;
+  for(let r = 0; r < arr.length; r++){
+     temp = arr[r][col1];
+     arr[r][col1] = arr[r][col2];
+     arr[r][col2] = temp;
+     temp = null;
+   }
+   return arr;
+}
+arr = swap2columns(arr, 1, 2);
+console.table(arr); 
+// /*Задание 4
+//  переставить местами столбцы 1 и 2*/
+
+//   console.table(arr); //Вывод 4 задания
