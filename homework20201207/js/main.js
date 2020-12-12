@@ -44,8 +44,4 @@ const swap2columns = (arr, col1, col2) => {
    return arr;
 }
 arr = swap2columns(arr, 1, 2);
-console.table(arr); 
-// /*Задание 4
-//  переставить местами столбцы 1 и 2*/
-
-//   console.table(arr); //Вывод 4 задания
+console.table(arr); //Вывод 4 задания
