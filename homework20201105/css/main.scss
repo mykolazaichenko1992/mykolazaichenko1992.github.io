@@ -1,0 +1,33 @@
+button{
+  width: 120px;
+  height: 50px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background-color:salmon;
+  position: relative;
+  overflow: hidden;
+}
+body{
+  display: flex;
+}
+button::before{
+  widows: 120px;
+  height: 50px;
+  background-color:black;
+  position: absolute;
+  left: -50px;
+  top: 0px;
+  transition: 200ms;
+  content: "s";
+  background-color:white;
+  filter: blur(15px);
+  transform: skewX(-45deg);
+}
+button:hover::before{
+  left: 150px;
+  transform: skewX(-45deg);
+}
+button:active {
+  top: 2px;
+  left: 2px;
+}
