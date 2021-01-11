@@ -1,5 +1,8 @@
 .conteiner {
   font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .outputs {
