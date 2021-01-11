@@ -8,11 +8,10 @@ const createTextAreas = () => {
   strArray = strArray.split(` `);
   console.log(strArray);
   strArray.forEach(element => {
-    str += `<textarea cols="30" rows="1">${element}</textarea>`;
+    str += `<input value="${element}"</input>`;
   });
   findOutPut.innerHTML = str;
 }
-
 findButton.addEventListener(`click`, () =>{
   strArray = findTextArea.value;
   createTextAreas();
