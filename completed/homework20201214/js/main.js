@@ -7,10 +7,7 @@ let strArray = new String();
 let longestWord = new String();
 
 const createTextAreas = () => {
-  strArray = strArray.split(` `);
-  strArray = strArray.filter((element) => {
-    return element != ``;
-  })
+  strArray = strArray.split(` `).filter((element) => element != ``);
   console.log(strArray);
   strArray.forEach(element => {
     str += `<input value="${element}"</input>`;
