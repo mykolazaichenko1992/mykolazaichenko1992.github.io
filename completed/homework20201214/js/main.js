@@ -3,6 +3,7 @@ const findButton = document.querySelector(`.button`);
 const findOutPut = document.querySelector(`.output`);
 let str = new String();
 let strArray = new String();
+
 const createTextAreas = () => {
   strArray = strArray.split(` `);
   console.log(strArray);
@@ -11,6 +12,7 @@ const createTextAreas = () => {
   });
   findOutPut.innerHTML = str;
 }
+
 findButton.addEventListener(`click`, () =>{
   strArray = findTextArea.value;
   createTextAreas();
