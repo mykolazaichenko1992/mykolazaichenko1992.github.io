@@ -1,0 +1,73 @@
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.info-board{
+  height: 1.2em;
+  background-color: lightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.main{
+  height: calc(100% - 1.2em);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.car-in{
+  display: none;
+}
+
+.car-out{
+  display: none;
+}
+
+.parking-space{
+  border: 2px solid grey;
+  margin: 2px;
+  min-width: 20px;
+  min-height: 10px;
+  padding: 2px;
+}
+
+.modal-close::before,
+.modal-close::after{
+  content: "";
+  position: absolute;
+  width: 27px;
+  height: 3px;
+  background-color: red;
+}
+
+.modal-close::after{
+  transform: rotate(-45deg);
+}
+
+.modal-close::before{
+  transform: rotate(-45deg);
+}
+
+.modal-close{
+  position: absolute;
+  top: 0px;
+  right: 28px;
+  width: 21px;
+  height: 21px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.wrapper{
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+}
+

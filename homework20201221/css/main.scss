@@ -5,26 +5,29 @@ main{
   margin: 0 auto;
 }
 .image{
-  width: 150px;
-  height: 150px;
   position: relative;
-  top: 200px;
+  top: 450px;
+  left: 0px;
+  img{
+    width: 150px;
+    height: 150px;
+  }
 }
 .lamp-off{
   position: absolute;
-  top: 230px;
-  left: 50px;
-  width: 25px;
-  height: 25px;
+  top: 90px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: white;
 }
 .lamp-on{
   position: absolute;
-  top: 230px;
-  left: 50px;
-  width: 25px;
-  height: 25px;
+  top: 90px;
+  left: 20px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
   background-color: yellow;
 }
